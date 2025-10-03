@@ -6,7 +6,7 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: #F5F5F5;
-  color: #000; /* all text black */
+  color: #000;
   line-height: 1.6;
   padding-top: 80px; /* space for fixed header */
   box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-  position: fixed;       /* stay on top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -23,16 +23,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px; /* reduce side padding */
-  box-sizing: border-box; /* include padding in width */
-  z-index: 1000;        /* above other content */
+  padding: 15px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .header-contact {
-  flex-shrink: 0; /* prevent shrinking */
+  flex-shrink: 0;
   text-align: right;
-  white-space: nowrap; /* prevent wrapping */
+  white-space: nowrap;
 }
 
 header img {
@@ -59,7 +59,7 @@ header a:hover {
 .hero h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  font-family: 'Montserrat', sans-serif; /* headings */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero p {
@@ -77,14 +77,14 @@ header a:hover {
   display: flex;
   justify-content: center;
   padding: 60px 20px;
-  background-color: #F5F5F5; /* soft light bg */
+  background-color: #F5F5F5;
 }
 
 .attorney-card {
   display: flex;
   align-items: center;
   background-color: white;
-  border-left: 8px solid #457778; /* teal accent */
+  border-left: 8px solid #457778;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -104,15 +104,15 @@ header a:hover {
 }
 
 .attorney-info h2 {
-  color: #457778; /* teal for heading */
+  color: #457778;
   margin-bottom: 15px;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
 }
 
 .attorney-logo {
-  height: 100px;   /* larger logo */
-  margin-bottom: 20px; /* spacing between logo and name */
+  height: 100px;
+  margin-bottom: 20px;
   display: block;
 }
 
@@ -144,4 +144,71 @@ header a:hover {
 
 .contact a:hover {
   text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .header-contact {
+    text-align: left;
+    margin-top: 5px;
+    font-size: 1em;
+    white-space: normal;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .attorney {
+    padding: 40px 20px;
+  }
+
+  .attorney-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .attorney-photo img {
+    width: 180px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .attorney-info {
+    max-width: 100%;
+  }
+
+  .attorney-info h2 {
+    font-size: 1.5em;
+  }
+
+  .attorney-info p {
+    font-size: 1em;
+  }
+
+  .about h2,
+  .contact h2 {
+    font-size: 1.5em;
+  }
+
+  .about p,
+  .contact p {
+    font-size: 1em;
+  }
 }
