@@ -162,11 +162,11 @@ header a:hover {
   text-decoration: underline;
 }
 
-/* Mobile Responsiveness – Bigger Text */
+/* Mobile Responsiveness – Extra Large Text */
 @media (max-width: 768px) {
   body {
     padding-top: 60px;
-    font-size: 1.2em; /* base text slightly larger */
+    font-size: 1.4em; /* bigger base text */
   }
 
   header {
@@ -178,16 +178,16 @@ header a:hover {
   .header-contact {
     text-align: left;
     margin-top: 5px;
-    font-size: 1.1em; /* bigger email text */
+    font-size: 1.2em; /* bigger email text */
     white-space: normal;
   }
 
   .hero h1 {
-    font-size: 2.5em; /* bigger heading */
+    font-size: 3em; /* much bigger heading */
   }
 
   .hero p {
-    font-size: 1.3em; /* bigger subheading */
+    font-size: 1.5em; /* bigger subheading */
   }
 
   .attorney {
@@ -202,7 +202,7 @@ header a:hover {
   }
 
   .attorney-photo img {
-    width: 200px; /* slightly bigger image */
+    width: 220px; /* larger image */
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -212,20 +212,20 @@ header a:hover {
   }
 
   .attorney-info h2 {
-    font-size: 1.8em; /* bigger attorney name */
+    font-size: 2em; /* much bigger attorney name */
   }
 
   .attorney-info p {
-    font-size: 1.2em; /* bigger description */
+    font-size: 1.4em; /* much bigger description for readability */
   }
 
   .about h2,
   .contact h2 {
-    font-size: 1.8em; /* bigger section headings */
+    font-size: 2em; /* bigger section headings */
   }
 
   .about p,
   .contact p {
-    font-size: 1.2em; /* bigger body text */
+    font-size: 1.3em; /* bigger body text */
   }
 }
