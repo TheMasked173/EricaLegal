@@ -10,6 +10,7 @@ body {
   line-height: 1.6;
   padding-top: 80px; /* space for fixed header */
   box-sizing: border-box;
+  font-size: 16px; /* base font size for desktop */
 }
 
 /* Header */
@@ -33,6 +34,7 @@ header {
   flex-shrink: 0;
   text-align: right;
   white-space: nowrap;
+  font-size: 1em;
 }
 
 header img {
@@ -108,6 +110,7 @@ header a:hover {
   margin-bottom: 15px;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
 }
 
 .attorney-logo {
@@ -126,6 +129,11 @@ header a:hover {
   margin-bottom: 15px;
   color: #457778;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+}
+
+.about p {
+  font-size: 1.1em;
 }
 
 /* Contact Section */
@@ -134,6 +142,14 @@ header a:hover {
   background-color: #ACA59E;
   color: black;
   text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.6em;
+}
+
+.contact p {
+  font-size: 1.1em;
 }
 
 .contact a {
@@ -146,10 +162,11 @@ header a:hover {
   text-decoration: underline;
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness – Bigger Text */
 @media (max-width: 768px) {
   body {
     padding-top: 60px;
+    font-size: 1.2em; /* base text slightly larger */
   }
 
   header {
@@ -161,33 +178,33 @@ header a:hover {
   .header-contact {
     text-align: left;
     margin-top: 5px;
-    font-size: 1em;
+    font-size: 1.1em; /* bigger email text */
     white-space: normal;
   }
 
   .hero h1 {
-    font-size: 2em;
+    font-size: 2.5em; /* bigger heading */
   }
 
   .hero p {
-    font-size: 1.1em;
+    font-size: 1.3em; /* bigger subheading */
   }
 
   .attorney {
-    padding: 40px 20px;
+    padding: 50px 20px;
   }
 
   .attorney-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
   }
 
   .attorney-photo img {
-    width: 180px;
+    width: 200px; /* slightly bigger image */
     margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .attorney-info {
@@ -195,20 +212,20 @@ header a:hover {
   }
 
   .attorney-info h2 {
-    font-size: 1.5em;
+    font-size: 1.8em; /* bigger attorney name */
   }
 
   .attorney-info p {
-    font-size: 1em;
+    font-size: 1.2em; /* bigger description */
   }
 
   .about h2,
   .contact h2 {
-    font-size: 1.5em;
+    font-size: 1.8em; /* bigger section headings */
   }
 
   .about p,
   .contact p {
-    font-size: 1em;
+    font-size: 1.2em; /* bigger body text */
   }
 }
